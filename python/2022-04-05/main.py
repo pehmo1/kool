@@ -1,22 +1,26 @@
-grid = [["[]", "[]", "[]", "[]", "[]"],
-    ["[]", "[]", "[]", "[]", "[]"],
-    ["[]", "[]", "[]", "[]", "[]"],
-    ["[]", "[]", "[]", "[]", "[]"],
-    ["[]", "[]", "[]", "[]", "[]"]]
-
 """ def genGrid(_x, _char):
     _grid = []
-    _row = []
     for i in range(_x):
-        print(i)
-        _row[i] = _char
-    for j in range(_x):
-        grid[j] = [_row]
-    return _grid
+        _row = []
+        for j in range(_x):
+           _row.append(_char)
+        _grid.append(_row)
+    return _grid """
 
-grid2 = genGrid(5,"0") """
+def canMoveRight(_grid, _currentPos):
+    if(_grid[_currentPos[0]+1][_currentPos[1]] == "0"):
+        return True
 
-def print_kaart():
-    print('\n'.join(' '.join(str(x) for x in row) for row in grid))
+def printGrid(_grid):
+    print('\n'.join(' '.join(str(x) for x in row) for row in _grid))
 
-print_kaart()
+#############################
+grid = [["12","0","1","0","0"],
+        ["0","0","1","0","0"],
+        ["0","0","1","0","0"],
+        ["0","0","1","0","0"],
+        ["0","0","0","0","24"]]
+startX = 0
+startY = 0
+
+print(canMoveRight(grid, [startX, startY]))
