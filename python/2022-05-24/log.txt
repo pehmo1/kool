@@ -1,0 +1,4 @@
+2022-05-27 20:53:57.811561:Vaba mälu 25018M, vaba ketas 13036M
+Mälu kasutus kõrgem kui 20%
+Ketta kasutus kõrgem kui 20%
+b'Weather report: tallinn\n\n                Overcast\n       .--.     +9(7) \xc2\xb0C       \n    .-(    ).   \xe2\x86\x92 22 km/h      \n   (___.__)__)  10 km          \n                0.0 mm         \n'
